@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class GameActivity extends Activity {
@@ -92,6 +93,7 @@ public class GameActivity extends Activity {
 
     public void reset(int count , int[] arr){
         if(count >= 9){
+            ((TextView) findViewById(R.id.player1_points)).setText("1");
             Toast.makeText(getApplicationContext(), "You Won! PLAYER1", Toast.LENGTH_SHORT).show();
         }
 
