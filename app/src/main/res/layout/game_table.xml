@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="start"
+            android:src="@drawable/back_icon"/>
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="start"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile_icon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp">
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:paddingRight="15dp"
+
+            android:background="@drawable/grupos_style"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:text="PLAYER1" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/symbol_table"
+            android:text="0"
+
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/snigletregular"
+            android:textAlignment="center"
+            android:paddingRight="15dp"
+
+            android:background="@drawable/symbol_table"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:layout_alignParentRight="true"
+            android:text="SYMBOL X" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/tictactoe_table"
+        android:padding="1dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/tictactoe_table"
+                android:padding="10dp"
+                android:scaleType="fitXY"/>
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:background="@drawable/tictactoe_table"
+                android:scaleType="fitXY"/>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:background="@drawable/tictactoe_table"
+
+                android:scaleType="fitXY"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/tictactoe_table"
+                android:padding="10dp"
+                android:scaleType="fitXY"/>
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/tictactoe_table"
+                android:padding="10dp"
+                android:scaleType="fitXY"/>
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:background="@drawable/tictactoe_table"
+                android:scaleType="fitXY"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:background="@drawable/tictactoe_table"
+                android:layout_width="100dp"
+                android:padding="10dp"
+                android:layout_height="100dp"
+
+
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:background="@drawable/tictactoe_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"/>
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:background="@drawable/tictactoe_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:scaleType="fitXY" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp">
+        <TextView
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/snigletregular"
+            android:textAlignment="center"
+            android:paddingRight="15dp"
+            android:background="@drawable/symbol_table"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:text="SYMBOL 0" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/symbol_table"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/grupos_style"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:text="PLAYER2" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

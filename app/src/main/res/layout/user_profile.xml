@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="start"
+            android:src="@drawable/back_icon" />
+
+        <LinearLayout
+            android:id="@+id/friends_open"
+            android:layout_width="160dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/settings"
+            android:background="@drawable/button_style">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:drawableLeft="@drawable/friends">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/profile"
+                android:layout_width="110dp"
+                android:clickable="false"
+                android:layout_height="match_parent"
+                android:textAlignment="textStart"
+                android:background="@android:color/transparent"
+                android:text="FRIENDS+"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageButton
+
+            android:id="@+id/settings"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="start"
+            android:background="@drawable/settings_style"
+            android:padding="5dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/settings"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background_user_info"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/user_pic_drawable">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/user_pic">
+
+            </ImageView>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="start"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pencil_edit" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/user_pic_drawable">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/snigletregular"
+                    android:paddingLeft="8dp"
+                    android:text="playerName"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pencil_edit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/user_pic_drawable">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/snigletregular"
+                        android:paddingLeft="8dp"
+                        android:textAlignment="center"
+                        android:text="WinRate\n45%"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#414550"
+                        />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/snigletregular"
+                        android:paddingLeft="8dp"
+                        android:text="Match\n340"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#414550"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+
+
+        <Button
+            android:id="@+id/ranking_button"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="7dp"
+
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/snigletregular"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="RANKING"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/history_button"/>
+        <Button
+            android:id="@+id/history_button"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:fontFamily="@font/snigletregular"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="history"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"/>
+
+
+</LinearLayout>

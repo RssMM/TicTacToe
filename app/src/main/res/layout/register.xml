@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_background_color"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:src="@drawable/tictactoe_logo"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="25dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_style"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/input_style"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="REPEAT PASSWORD"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/password_repeat_register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/input_style"/>
+
+    <Button
+        android:id="@+id/register_go"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/snigletregular"
+        android:text="REGISTER"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

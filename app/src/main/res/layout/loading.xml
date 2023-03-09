@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_background_color"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:fontFamily="@font/snigletregular"
+        android:layout_marginTop="6dp"
+        android:textColor="#928585"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="4"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:textSize="26dp"
+        android:text="TIC TAC TOE" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/tictactoe_logo">
+    </ImageView>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:textColor="#db1717"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.3"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="26dp"
+        android:text="LOADING..."
+        android:fontFamily="@font/snigletregular"/>
+
+</LinearLayout>

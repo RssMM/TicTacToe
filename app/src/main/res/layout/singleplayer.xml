@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_background_color"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="start"
+            android:src="@drawable/back_icon" />
+
+        <ImageButton
+
+            android:id="@+id/profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="start"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile_icon" android:layout_marginEnd="80dp"/>
+
+        <ImageButton
+
+            android:id="@+id/settings"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="start"
+            android:background="@drawable/settings_style"
+            android:padding="5dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/settings"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_card"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/snigletregular"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:text="SELECT YOUR NAME"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/playerOne"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:background="@drawable/input_style"
+
+            android:inputType="textPersonName"
+            android:text="Name" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_singleplayer"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/snigletregular"
+        android:text="START!"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"/>
+
+
+</LinearLayout>
