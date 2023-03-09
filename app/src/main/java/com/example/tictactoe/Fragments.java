@@ -35,6 +35,11 @@ public class Fragments extends Fragment {
                 rankings.add(new Ranking("batban", "65%", 245));
                 rankings.add(new Ranking("owlseek", "53%", 377));
                 rankings.add(new Ranking("averagepl", "50%", 405));
+                rankings.add(new Ranking("sudoking", "73%", 667));
+                rankings.add(new Ranking("sogek", "72%", 100));
+                rankings.add(new Ranking("batban", "65%", 245));
+                rankings.add(new Ranking("owlseek", "53%", 377));
+                rankings.add(new Ranking("averagepl", "50%", 405));
 
 
                 recycler.setAdapter(adapter);
@@ -51,7 +56,11 @@ public class Fragments extends Fragment {
                 history.add(new History("0:0:54", "Lost", "firbyRf"));
                 history.add(new History("0:0:25", "Won", "oneway456"));
                 history.add(new History("0:0:30", "Lost", "PlayerName1"));
-
+                history.add(new History("0:1:10", "Won", "Mrtictactoe"));
+                history.add(new History("0:0:21", "Won", "bonemeal"));
+                history.add(new History("0:0:54", "Lost", "firbyRf"));
+                history.add(new History("0:0:25", "Won", "oneway456"));
+                history.add(new History("0:0:30", "Lost", "PlayerName1"));
 
                 recycler1.setAdapter(adapter1);
                 break;

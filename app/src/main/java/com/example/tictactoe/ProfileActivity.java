@@ -33,6 +33,11 @@ public class ProfileActivity extends FragmentActivity {
         friends.add(new Friends("batban", true));
         friends.add(new Friends("owlseek", true));
 
+        friends.add(new Friends("sudoking", false));
+        friends.add(new Friends("sogek", false));
+        friends.add(new Friends("batban", true));
+        friends.add(new Friends("owlseek", true));
+
         List<Friends> friendsFilter = new ArrayList<>();
 
         getSupportFragmentManager().beginTransaction()

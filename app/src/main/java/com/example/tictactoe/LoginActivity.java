@@ -14,9 +14,11 @@ public class LoginActivity extends Activity {
 
         findViewById(R.id.login).setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+
                 startActivity(new Intent(LoginActivity.this, MenuActivity.class));
             }
         });
+
 
         findViewById(R.id.register_go).setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

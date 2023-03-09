@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class SinglePlayerOptionActivity extends Activity {
 
@@ -15,16 +16,22 @@ public class SinglePlayerOptionActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.singleplayer);
 
+        EditText player1EditText = findViewById(R.id.player1);
+
+
         findViewById(R.id.start_singleplayer).setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                EditText name = (EditText) findViewById(R.id.playerOne);
+                Intent intent = new Intent(SinglePlayerOptionActivity.this,  GameActivity.class);
+                intent.putExtra("player1_name", "AI");
+                intent.putExtra("player2_name", player1EditText.getText().toString());
 
-                Intent intent = new Intent(SinglePlayerOptionActivity.this, GameActivity.class);
-                intent.putExtra("name", name.getText().toString());
 
-                if(!name.getText().toString().isEmpty()){
-                    startActivity(new Intent(SinglePlayerOptionActivity.this,  GameActivity.class));
+                if(!player1EditText.getText().toString().isEmpty()){
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(getApplicationContext(), "Fill the player names", Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
 
